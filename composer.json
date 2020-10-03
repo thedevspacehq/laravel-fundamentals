@@ -6,6 +6,12 @@
         "framework",
         "laravel"
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./nova"
+        }
+    ],
     "license": "MIT",
     "require": {
         "php": "^7.3",
@@ -13,7 +19,8 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "laravel/nova": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
