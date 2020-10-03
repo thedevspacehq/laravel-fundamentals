@@ -11,14 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b66f13a-e975-49b1-b57d-7be7d2fdcc51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/General.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Nova/General.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Nova/Resource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Nova/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/nova.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_03_162023_create_generals_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nova/.babelrc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nova/.editorconfig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nova/.eslintrc" afterDir="false" />
@@ -851,37 +843,29 @@
       <change afterPath="$PROJECT_DIR$/nova/tests/Unit/MakeableTraitTest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nova/webpack.mix.js.dist" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nova/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/nova/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/nova/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/nova/manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/nova/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/nova/vendor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vendor/nova/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vendor/nova/en/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/logo.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/meta.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Laravel_8_Tutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Laravel_8_Tutorial.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -1054,6 +1038,7 @@
       <updated>1601663016998</updated>
       <workItem from="1601663025124" duration="705000" />
       <workItem from="1601664257392" duration="15126000" />
+      <workItem from="1601750916539" duration="319000" />
     </task>
     <servers />
   </component>
@@ -1080,6 +1065,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="292" key="#Composer/0.0.1536.824@0.0.1536.824" timestamp="1601664278993" />
+    <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601750986367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601750986367" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1601665480367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
