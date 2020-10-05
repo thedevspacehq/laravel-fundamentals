@@ -8,25 +8,22 @@ use App\Models\Tag;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
-class IndexController extends Controller
+class TagController extends Controller
 {
-    public function __invoke()
+    public function __invoke($slug)
     {
         //get the general information about the website
         $website = General::query()->firstOrFail();
 
-        //get the posts that are published, sort by decreasing order of "id".
-        $posts = Post::query()
-            ->where('is_published',true)
-            ->orderBy('id','desc')
-            ->get();
+        //get the requested tag
+        $tag = Tag::query()
+            ->where('slug', $slug)
+            ->firstOrFail();
 
-        //get the featured posts
-        $featured_posts = Post::query()
+        //get the posts with that tag
+        $posts = $tag->posts()
             ->where('is_published',true)
-            ->where('is_featured',true)
             ->orderBy('id','desc')
-            ->take(5)
             ->get();
 
         //get all the categories
@@ -43,10 +40,10 @@ class IndexController extends Controller
             ->get();
 
         //return the data to the corresponding view
-        return view('home', [
+        return view('tag', [
             'website' => $website,
+            'tag' => $tag,
             'posts' => $posts,
-            'featured_posts' => $featured_posts,
             'categories' => $categories,
             'tags' => $tags,
             'recent_posts' => $recent_posts

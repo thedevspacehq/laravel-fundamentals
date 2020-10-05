@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class General extends Model
+class Category extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -13,6 +13,16 @@ class General extends Model
      * @var array
      */
     protected $fillable = [
-        'website_title', 'logo', 'description'
+        'name',
+        'description',
+        'slug',
     ];
+
+    /**
+     * Get the posts for the user.
+     */
+    public function posts()
+    {
+        return $this->hasMany('App\Models\Post');
+    }
 }
