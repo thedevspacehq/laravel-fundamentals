@@ -184,6 +184,16 @@
       <path value="$PROJECT_DIR$/vendor/laravel/nova" />
       <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
       <path value="$PROJECT_DIR$/vendor/brick/money" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/larapack/voyager-hooks" />
+      <path value="$PROJECT_DIR$/vendor/larapack/hooks" />
+      <path value="$PROJECT_DIR$/vendor/larapack/doctrine-support" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/arrilot/laravel-widgets" />
+      <path value="$PROJECT_DIR$/vendor/tcg/voyager" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iKj8GsMCOXUhn4HstMdWnfj6mI" />
@@ -202,7 +212,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -215,12 +225,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\Laravel_8_Tutorial" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\Projects\Laravel_8_Tutorial\database" />
       <recent name="D:\Projects\Laravel_8_Tutorial\public\vendor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\Projects\Laravel_8_Tutorial\public" />
+      <recent name="D:\Projects\Laravel_8_Tutorial" />
     </key>
   </component>
   <component name="RunManager">
@@ -243,6 +254,7 @@
       <workItem from="1602708347065" duration="230000" />
       <workItem from="1602708992665" duration="351000" />
       <workItem from="1602709365090" duration="114000" />
+      <workItem from="1602709594256" duration="3193000" />
     </task>
     <servers />
   </component>
@@ -269,10 +281,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="292" key="#Composer/0.0.1536.824@0.0.1536.824" timestamp="1601664278993" />
-    <state x="552" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602709254191">
+    <state x="552" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602709754586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602709254191" />
+    <state x="552" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602709754586" />
     <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602709200588">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -281,15 +293,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601847492168" />
-    <state x="686" y="194" key="FileChooserDialogImpl" timestamp="1602709239450">
+    <state x="686" y="194" key="FileChooserDialogImpl" timestamp="1602709723800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601665480367" />
-    <state x="686" y="194" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602709239450" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1601858189035">
+    <state x="686" y="194" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602709723800" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1602713227651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601858189035" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602713227651" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1602708578554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
