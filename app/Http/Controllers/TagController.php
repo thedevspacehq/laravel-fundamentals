@@ -20,7 +20,7 @@ class TagController extends Controller
         $posts = $tag->posts()
             ->where('is_published',true)
             ->orderBy('id','desc')
-            ->get();
+            ->paginate(env('PAGE_NUMBER'));
 
         //get all the categories
         $categories = Category::all();

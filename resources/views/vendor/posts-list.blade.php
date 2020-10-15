@@ -1,7 +1,8 @@
 @foreach($posts as $post)
     <!-- Blog Post -->
     <div class="card mb-4">
-        <img class="card-img-top" src="{{\Illuminate\Support\Facades\Storage::url($post['featured_image'])}}" alt="Card image cap">
+        <img class="card-img-top" src="{{\Illuminate\Support\Facades\Storage::url($post['featured_image'])}}"
+             alt="Card image cap">
         <div class="card-body">
             <h2 class="card-title">{{$post['title']}}</h2>
             <p class="card-text">{{\Illuminate\Support\Str::limit(strip_tags($post['content']), 200, '...')}}</p>
@@ -13,3 +14,8 @@
         </div>
     </div>
 @endforeach
+
+<!-- Pagination -->
+<ul class="pagination justify-content-center mb-4">
+    {{$posts->links("pagination::bootstrap-4")}}
+</ul>

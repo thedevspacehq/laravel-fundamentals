@@ -8,7 +8,7 @@
 @yield('title')
 
 <!-- Bootstrap core CSS -->
-    <link href="{{asset('vendor/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="{{asset('vendor/css/mystyle.css')}}" rel="stylesheet">
