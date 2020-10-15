@@ -1,61 +1,65 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Laravel 8 Tutorial For Beginners
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Laravel is a very powerful framework that follows the MVC structure. It is designed for web developers who need a simple, elegant yet powerful toolkit to build a fully-featured website. This tutorial explains the basic use of **Laravel 8** by building a simple blogging system.
 
-## About Laravel
+## Demo
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Here is a demo site I’ve built: http://laravel.demo.techjblog.com/
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Login Information**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+email: [demo@demo.com](https://mailto:demo@demo.com/)
 
-## Learning Laravel
+password: demo
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Part One: Laravel Basics
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+[![Get Started With Laravel 6](https://res.cloudinary.com/practicaldev/image/fetch/s--JoY1eRaD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://embed-fastly.wistia.com/deliveries/9c85353a926f914df6d193b126374548.webp%3Fimage_crop_resized%3D1280x720)](https://res.cloudinary.com/practicaldev/image/fetch/s--JoY1eRaD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://embed-fastly.wistia.com/deliveries/9c85353a926f914df6d193b126374548.webp%3Fimage_crop_resized%3D1280x720)
 
-## Laravel Sponsors
+Before we can start building our project, we need to talk about some basic concepts in Laravel. Let’s start by making some preparations, install the necessary software, create a new Laravel project, and then, we need to understand the MVC structure, which is commonly used by most of the web frameworks. And finally, we'll talk about Laravel Nova, the official admin panel for Laravel applications.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+[Laravel Tutorial #1: Setup the Project](https://www.techjblog.com/index.php/2020/09/laravel-tutorial-1-setup-the-project/)
 
-### Premium Partners
+[Laravel Tutorial #2: Routing](https://www.techjblog.com/index.php/2020/09/laravel-tutorial-2-routing/)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+[Laravel Tutorial #3: The MVC Structure](https://www.techjblog.com/index.php/2020/09/laravel-tutorial-3-the-mvc-structure/)
 
-## Contributing
+[Laravel Tutorial #4: Admin Panel](https://www.techjblog.com/index.php/2020/09/laravel-tutorial-4-admin-panel/)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Part Two: Build A Blog
 
-## Code of Conduct
+To get familiar with everything, we start by creating only the home page.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+[Laravel Tutorial #5: Create the Home Page](https://www.techjblog.com/index.php/2020/10/laravel-tutorial-5-create-the-home-page/)
 
-## Security Vulnerabilities
+One of the most important steps of web development is to design the database structure. In this tutorial, we’ll make four database tables together.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+[![Designing Database Solutions for SQL Server 2016](https://res.cloudinary.com/practicaldev/image/fetch/s--ai2ihDvi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--62VpMtMA--/c_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880/https://cdn.lynda.com/course/548706/548706-637286205910916704-16x9.jpg)](https://res.cloudinary.com/practicaldev/image/fetch/s--ai2ihDvi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--62VpMtMA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.lynda.com/course/548706/548706-637286205910916704-16x9.jpg)
 
-## License
+The `users` table stores the user name, email and password. The migration file for this table is already included in Laravel. The `categories` and `tags` tables store the category names and tag names. And finally, the `posts` table stores the post title, content, post image and so on.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+However, just creating the tables is not enough. The tables have relationships with each other. This part could be a little tough for beginners, I will try to make it easy to understand, and only introduce the four most basic relationships.
+
+[![img](https://res.cloudinary.com/practicaldev/image/fetch/s--mjBhiY-M--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--yMmsLI7Z--/c_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880/https://i1.wp.com/www.techjblog.com/wp-content/uploads/2020/06/laravel-nova-1.png%253Ffit%253D953%25252C483%2526ssl%253D1)](https://res.cloudinary.com/practicaldev/image/fetch/s--mjBhiY-M--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--yMmsLI7Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i1.wp.com/www.techjblog.com/wp-content/uploads/2020/06/laravel-nova-1.png%3Ffit%3D953%252C483%26ssl%3D1)
+
+[Laravel Tutorial #6: Create Models and Setup Admin Panel](https://www.techjblog.com/index.php/2020/10/laravel-tutorial-6-create-models-and-setup-admin-panel/)
+
+Routes are the entry points when someone visits your blog. They receive URLs and returns controllers. Controllers retrieve data from the database through models and put them in views. Views are what we actually see in the browser, so they do look like HTML and CSS. However, things are more complicated than that.
+
+[Laravel Tutorial #7: Create Routes, Controllers and Views](https://www.techjblog.com/index.php/2020/10/laravel-tutorial-7-create-routes-controllers-and-views/)
+
+In the next two articles, we'll build search, pagination and some other optional features for our project. However, if you are not interested, feel free to jump to the end, and we can finally deploy our application.
+
+[![14 Bootstrap Search Bar Box Design Examples - OnAirCode](https://res.cloudinary.com/practicaldev/image/fetch/s--GHX2GMD6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--wMF3SWnn--/c_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880/https://i0.wp.com/onaircode.com/wp-content/uploads/2019/10/awesome-search-box.jpg%253Fresize%253D1080%25252C601%2526ssl%253D1)](https://res.cloudinary.com/practicaldev/image/fetch/s--GHX2GMD6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--wMF3SWnn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i0.wp.com/onaircode.com/wp-content/uploads/2019/10/awesome-search-box.jpg%3Fresize%3D1080%252C601%26ssl%3D1)
+
+[Laravel Tutorial #8: Search](https://www.techjblog.com/index.php/2020/10/laravel-tutorial-8-search/)
+
+[Laravel Tutorial #9: Wrap Things Up](https://www.techjblog.com/index.php/2020/10/laravel-tutorial-9-wrap-things-up/)
+
+[Laravel Tutorial #10: Deployment](https://www.techjblog.com/index.php/2020/10/laravel-tutorial-10-deployment/)
+
+## Other Resources
+
+[Some Useful Tools For Web Development (PHP)](http://some useful tools for web development (php)/)
+
+[Laravel Official Documentation](https://laravel.com/docs/8.x)
