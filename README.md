@@ -60,6 +60,6 @@ In the next two articles, we'll build search, pagination and some other optional
 
 ## Other Resources
 
-[Some Useful Tools For Web Development (PHP)](http://some useful tools for web development (php)/)
+[Some Useful Tools For Web Development (PHP)](https://www.techjblog.com/index.php/2019/11/some-useful-tools-for-web-developing-php/)
 
 [Laravel Official Documentation](https://laravel.com/docs/8.x)
