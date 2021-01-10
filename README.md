@@ -2,16 +2,6 @@
 
 Laravel is a very powerful framework that follows the MVC structure. It is designed for web developers who need a simple, elegant yet powerful toolkit to build a fully-featured website. This tutorial explains the basic use of **Laravel 8** by building a simple blogging system.
 
-## Demo
-
-Here is a demo site I’ve built: http://laravel.demo.techjblog.com/
-
-**Login Information**
-
-email: [demo@demo.com](https://mailto:demo@demo.com/)
-
-password: demo
-
 ## Part One: Laravel Basics
 
 [![Get Started With Laravel 6](https://res.cloudinary.com/practicaldev/image/fetch/s--JoY1eRaD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://embed-fastly.wistia.com/deliveries/9c85353a926f914df6d193b126374548.webp%3Fimage_crop_resized%3D1280x720)](https://res.cloudinary.com/practicaldev/image/fetch/s--JoY1eRaD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://embed-fastly.wistia.com/deliveries/9c85353a926f914df6d193b126374548.webp%3Fimage_crop_resized%3D1280x720)
