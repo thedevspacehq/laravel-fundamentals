@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -23,7 +24,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('post.create');
     }
 
     /**
@@ -34,7 +35,19 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Get the data from the request
+        $title = $request->input('title');
+        $content = $request->input('content');
+
+        // Create a new Home and put the requested data to the corresponding column
+        $post = new Post;
+        $post->title = $title;
+        $post->content = $content;
+
+        // Save the data
+        $post->save();
+
+        return view('post.list');
     }
 
     /**
