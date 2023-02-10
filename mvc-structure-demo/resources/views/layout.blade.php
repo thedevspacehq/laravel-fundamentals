@@ -14,7 +14,7 @@
         <div id="nav">
             <nav class="flex flex-row justify-between h-16 items-center shadow-md">
                 <div class="px-5 text-2xl">
-                    <a href="/">
+                    <a href="{{ route('posts.index') }}">
                         My Blog
                     </a>
                 </div>
