@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TagController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +17,40 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Homepage
+Route::get('/', [PostController::class, 'home'])->name('home');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// A list of posts under this category
+Route::get('/category/{category}', [CategoryController::class, 'category'])->name('category');
+
+// A list of posts with this tag
+Route::get('/tag/{tag}', [TagController::class, 'tag'])->name('tag');
+
+// Display a single post
+Route::get('/post/{post}', [PostController::class, 'post'])->name('post');
+
+// A list of posts based on search query
+Route::get('/search', [PostController::class, 'search'])->name('search');
+
+
+// Dashboard routes
+Route::prefix('dashboard')->group(function () {
+
+    // Dashboard homepage
+    Route::get('/', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+    // Dashboard category resource
+    Route::resource('categories', CategoryController::class);
+
+    // Dashboard tag resource
+    Route::resource('tags', TagController::class);
+
+    // Dashboard post resource
+    Route::resource('posts', PostController::class);
+    
+})->middleware(['auth', 'verified']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -28,4 +58,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
