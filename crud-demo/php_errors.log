@@ -1,7 +1,0 @@
-[06-Feb-2023 21:22:58 UTC] PHP Warning:  require(/Users/erichu/Documents/Eric's Dev Blog/laravel-tutorial/mvc-structure-demo/vendor/autoload.php): Failed to open stream: No such file or directory in /Users/erichu/Documents/Eric's Dev Blog/laravel-tutorial/mvc-structure-demo/artisan on line 18
-[06-Feb-2023 21:22:58 UTC] PHP Stack trace:
-[06-Feb-2023 21:22:58 UTC] PHP   1. {main}() /Users/erichu/Documents/Eric's Dev Blog/laravel-tutorial/mvc-structure-demo/artisan:0
-[06-Feb-2023 21:22:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/erichu/Documents/Eric's Dev Blog/laravel-tutorial/mvc-structure-demo/vendor/autoload.php' (include_path='.:/opt/homebrew/Cellar/php/8.1.7/share/php/pear') in /Users/erichu/Documents/Eric's Dev Blog/laravel-tutorial/mvc-structure-demo/artisan:18
-Stack trace:
-#0 {main}
-  thrown in /Users/erichu/Documents/Eric's Dev Blog/laravel-tutorial/mvc-structure-demo/artisan on line 18
