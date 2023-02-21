@@ -69,7 +69,7 @@ class PostController extends Controller
     {
         $post = Post::all()->find($id);
 
-        return view('posts.index', [
+        return view('posts.edit', [
             'post' => $post
         ]);
     }

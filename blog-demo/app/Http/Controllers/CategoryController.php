@@ -69,7 +69,7 @@ class CategoryController extends Controller
     {
         $category = Category::all()->find($id);
 
-        return view('categories.index', [
+        return view('categories.edit', [
             'category' => $category
         ]);
     }

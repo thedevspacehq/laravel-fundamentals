@@ -69,7 +69,7 @@ class TagController extends Controller
     {
         $tag = Tag::all()->find($id);
 
-        return view('tags.index', [
+        return view('tags.edit', [
             'tag' => $tag
         ]);
     }
