@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Post;
+use App\Models\Tag;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -36,11 +38,30 @@ class PostController extends Controller
     public function store(Request $request): RedirectResponse
     {
         // Get the data from the request
-        $name = $request->input('name');
+        $title = $request->input('title');
+        $content = $request->input('content');
+        $is_published = $request->input('is_published');
 
         // Create a new Post instance and put the requested data to the corresponding column
         $post = new Post();
-        $post->name = $name;
+        $post->title = $title;
+        $post->content = $content;
+        $post->is_published = $is_published;
+
+        // Deal with the cover image
+        $path = $request->file('cover')->store('cover', 'public');
+        $post->cover = $path;
+
+        // Set relations
+        $category = Category::find($request->input('category'));
+        $post->category()->save($category);
+
+        $tags = $request->input('tags');
+
+        foreach($tags as $tag_id){
+            $tag = Tag::find($tag_id);
+            $post->tags()->save($tag);
+        }
 
         // Save the data
         $post->save();

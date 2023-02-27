@@ -12,9 +12,18 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            @foreach($categories as $category)
-            123
-            @endforeach
+            <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
+                <div class="max-w-xl">
+                    <form action="{{ route('categories.store') }}" method="POST" class="mt-6 space-y-3">
+                        {{ csrf_field() }}
+                        <x-input-label for="name">{{ __('Name') }}</x-input-label>
+                        <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" required autofocus autocomplete="name" />
+                        <br>
+                        <x-primary-button>{{ __('Save') }}</x-primary-button>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </div>
 </x-app-layout>
