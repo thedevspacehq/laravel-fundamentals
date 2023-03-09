@@ -15,11 +15,17 @@
             @foreach($posts as $post)
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg mb-4 px-4 h-20 flex justify-between items-center">
                 <div class="text-gray-900 dark:text-gray-100">
-                    <a href="{{ route('posts.show', ['post' => $post->id]) }}" class="hover:underline">{{ $post->name }}</a>
+                    <p>{{ $post->title }}</p>
                 </div>
                 <div class="space-x-2">
                     <a href="{{ route('posts.edit', ['post' => $post->id]) }}"> <x-primary-button>{{ __('Edit') }}</x-primary-button></a>
-                    <a href="{{ route('posts.destroy', ['post' => $post->id]) }}"> <x-danger-button>{{ __('Delete') }}</x-danger-button></a>
+                    <form method="post" action="{{ route('posts.destroy', ['post' => $post->id]) }}" class="inline">
+                        {{ csrf_field() }}
+                        {{ method_field('DELETE') }}
+                        <x-danger-button>
+                            {{ __('Delete') }}
+                        </x-danger-button>
+                    </form>
                 </div>
             </div>
             @endforeach

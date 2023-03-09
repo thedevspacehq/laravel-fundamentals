@@ -19,7 +19,13 @@
                 </div>
                 <div class="space-x-2">
                     <a href="{{ route('categories.edit', ['category' => $category->id]) }}"> <x-primary-button>{{ __('Edit') }}</x-primary-button></a>
-                    <a href="{{ route('categories.destroy', ['category' => $category->id]) }}"> <x-danger-button>{{ __('Delete') }}</x-danger-button></a>
+                    <form method="post" action="{{ route('categories.destroy', ['category' => $category->id]) }}" class="inline">
+                        {{ csrf_field() }}
+                        {{ method_field('DELETE') }}
+                        <x-danger-button>
+                            {{ __('Delete') }}
+                        </x-danger-button>
+                    </form>
                 </div>
             </div>
             @endforeach
