@@ -14,6 +14,22 @@ use Illuminate\Support\Facades\Auth;
 class PostController extends Controller
 {
     /**
+     * Display the home page
+     */
+    public function home(): View
+    {
+        $posts = Post::paginate(15);
+        $categories = Category::all();
+        $tags = Tag::all();
+
+        return view('home', [
+            'posts' => $posts,
+            'categories' => $categories,
+            'tags' => $tags
+        ]);
+    }
+
+    /**
      * Display a listing of the resource.
      */
     public function index(): View
