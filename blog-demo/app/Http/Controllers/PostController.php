@@ -10,6 +10,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Builder;
 
 class PostController extends Controller
 {
@@ -18,7 +19,7 @@ class PostController extends Controller
      */
     public function home(): View
     {
-        $posts = Post::paginate(15);
+        $posts = Post::where('is_published', true)->paginate(env('PAGINATE_NUM'));
         $categories = Category::all();
         $tags = Tag::all();
 
@@ -26,6 +27,44 @@ class PostController extends Controller
             'posts' => $posts,
             'categories' => $categories,
             'tags' => $tags
+        ]);
+    }
+
+    /**
+     * Display requested post
+     */
+    public function post(string $id): View
+    {
+        $post = Post::find($id);
+        $categories = Category::all();
+        $tags = Tag::all();
+        $related_posts = Post::where('is_published', true)->whereHas('tags', function (Builder $query) use ($post) {
+            return $query->whereIn('name', $post->tags->pluck('name'));
+        })->where('id', '!=', $post->id)->take(3)->get();
+
+        return view('post', [
+            'post' => $post,
+            'categories' => $categories,
+            'tags' => $tags,
+            'related_posts' => $related_posts
+        ]);
+    }
+
+    /**
+     * Display search result
+     */
+    public function search(Request $request): View
+    {
+        $key = $request->input('q');
+        $posts = Post::where('title', 'like', "%{$key}%")->orderBy('id', 'desc')->paginate(env('PAGINATE_NUM'));
+        $categories = Category::all();
+        $tags = Tag::all();
+
+        return view('search', [
+            'key' => $key,
+            'posts' => $posts,
+            'categories' => $categories,
+            'tags' => $tags,
         ]);
     }
 

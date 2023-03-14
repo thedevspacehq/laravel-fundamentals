@@ -30,7 +30,7 @@ Route::get('/tag/{tag}', [TagController::class, 'tag'])->name('tag');
 Route::get('/post/{post}', [PostController::class, 'post'])->name('post');
 
 // A list of posts based on search query
-Route::get('/search', [PostController::class, 'search'])->name('search');
+Route::post('/search', [PostController::class, 'search'])->name('search');
 
 
 // Dashboard routes

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Tag;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -10,6 +11,24 @@ use Illuminate\Http\Response;
 
 class CategoryController extends Controller
 {
+    /**
+     * Display a list of posts belong to the category
+     */
+    public function category(string $id): View
+    {
+        $category = Category::find($id);
+        $posts = $category->posts()->where('is_published', true)->paginate(env('PAGINATE_NUM'));
+        $categories = Category::all();
+        $tags = Tag::all();
+
+        return view('category', [
+            'category' => $category,
+            'posts' => $posts,
+            'categories' => $categories,
+            'tags' => $tags
+        ]);
+    }
+
     /**
      * Display a listing of the resource.
      */

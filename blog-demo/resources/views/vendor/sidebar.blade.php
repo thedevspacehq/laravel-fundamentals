@@ -2,7 +2,7 @@
   <div class="border rounded-md mb-4">
     <div class="bg-slate-200 p-4">Search</div>
     <div class="p-4">
-      <form action="{% url 'search' %}" method="POST" class="grid grid-cols-4 gap-2">
+      <form action="{{ route('search') }}" method="POST" class="grid grid-cols-4 gap-2">
         {{ csrf_field() }}
         <input type="text" name="q" id="search" class="border rounded-md w-full focus:ring p-2 col-span-3" placeholder="Search something..." />
         <button type="submit" class="bg-blue-500 hover:bg-blue-700 rounded-md p-2 text-white uppercase font-semibold font-sans w-full focus:ring col-span-1">

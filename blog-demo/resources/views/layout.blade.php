@@ -16,7 +16,7 @@
         </div>
         <div class="hidden lg:flex content-between space-x-10 px-10 text-lg">
             <a href="https://github.com/ericnanhu" class="hover:underline hover:underline-offset-1">GitHub</a>
-            <a href="#" class="hover:underline hover:underline-offset-1">Link</a>
+            <a href="{{ route('dashboard') }}" class="hover:underline hover:underline-offset-1">Dashboard</a>
             <a href="#" class="hover:underline hover:underline-offset-1">Link</a>
         </div>
     </nav>
