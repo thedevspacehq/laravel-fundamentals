@@ -12,6 +12,6 @@ These demo projects are created for the [Laravel for Beginners](https://www.eric
 - [Laravel for Beginners #4](https://www.ericsdevblog.com/posts/laravel-for-beginners-4/)
 - [Laravel for Beginners #5](https://www.ericsdevblog.com/posts/laravel-for-beginners-5/)
 
-Interested in learning web development? Take a look at this course:
+Interested in learning web development? Take a look at this course 👇
 
 - [https://www.thedevspace.io/](https://www.thedevspace.io/)
